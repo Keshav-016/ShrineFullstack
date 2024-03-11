@@ -1,0 +1,108 @@
+$heading-color: #232526;
+$content-color: #747a82;
+$arrow-bg-color: #c0304f;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.box{
+  height: 500px;
+}
+// nav section start
+
+.navbarSection{
+  background-color: #F6F2EB;
+}
+
+.itemCount {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $arrow-bg-color;
+  color: white;
+  position: absolute;
+  top: -50%;
+  right: -70%;
+}
+
+.navbarContent {
+  border-bottom: 2px solid transparent !important;
+}
+
+.navbarContent:hover {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+    to right,
+    $arrow-bg-color,
+    $arrow-bg-color 70%,
+    white 70%,
+    white 80%,
+    $arrow-bg-color 80%,
+    $arrow-bg-color
+  );
+  border-image-slice: 1;
+}
+
+.shrineLogo {
+  top: 20px;
+  left: 40vw;
+}
+
+.logo{
+  background-color: #F6F2EB;
+}
+
+
+// hero section
+
+.heroSection{
+  background-color: #F6F2EB;
+}
+
+.jesusImage{
+  height: 45rem;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.heroSmallImage{
+  border-radius: 50% 50% 0 0;
+  img{
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.faithMotion{
+  // bottom: 0rem;
+  background-color: #ffff;
+}
+
+
+// footer section start
+
+.footer {
+  background-image: url(images/footer/footer.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  button {
+    background-color: $arrow-bg-color !important;
+  }
+}
+
+.footerContent {
+  li > a {
+    color: $content-color;
+  }
+}
