@@ -4,6 +4,11 @@
   box-sizing: border-box !important;
 }
 
+.sectionHeading {
+  border-left: solid 0.3rem #C0304F;
+  max-width: 24rem;
+}
+
 .box {
   height: 500px;
 }
@@ -67,9 +72,13 @@
   margin-top: -2rem !important;
 }
 
-.faithfulHeading {
-  border-left: solid 0.3rem #C0304F;
-  max-width: 24rem;
+.unleashPotentialButton {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.unleashPotentialChurch {
+  max-height: 36rem;
 }
 
 .footer {

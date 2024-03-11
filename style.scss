@@ -8,6 +8,11 @@ $arrow-bg-color: #c0304f;
   box-sizing: border-box !important;
 }
 
+.sectionHeading{
+  border-left: solid 0.3rem #C0304F ;
+  max-width: 24rem;
+}
+
 .box {
   height: 500px;
 }
@@ -84,10 +89,14 @@ $arrow-bg-color: #c0304f;
   margin-top: -2rem !important;
 }
 
-// faithful hearts
-.faithfulHeading{
-  border-left: solid 0.3rem #C0304F ;
-  max-width: 24rem;
+// unleashPotential section start
+
+
+.unleashPotentialButton{
+  width: fit-content;
+}
+.unleashPotentialChurch{
+  max-height: 36rem;
 }
 
 // footer section start
