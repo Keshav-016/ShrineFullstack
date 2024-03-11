@@ -1,6 +1,6 @@
 function navbarContent() {
     return `
-<nav class="navbar navbar-expand-lg border-bottom">
+<nav class="navbar navbar-expand-lg border-bottom z-3">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center d-block d-lg-none" href="#">
             <img src="images/logo/shrine-black.svg" alt="logo" width="150px" class="logo"/>

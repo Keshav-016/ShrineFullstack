@@ -5,17 +5,16 @@ $arrow-bg-color: #c0304f;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
-
-.box{
+.box {
   height: 500px;
 }
 // nav section start
 
-.navbarSection{
-  background-color: #F6F2EB;
+.navbarSection {
+  background-color: #f6f2eb;
 }
 
 .itemCount {
@@ -53,40 +52,43 @@ $arrow-bg-color: #c0304f;
   left: 40vw;
 }
 
-.logo{
-  background-color: #F6F2EB;
+.logo {
+  background-color: #f6f2eb;
 }
-
 
 // hero section
 
-.heroSection{
-  background-color: #F6F2EB;
+.heroSection {
+  background-color: #f6f2eb;
 }
 
-.jesusImage{
-  height: 45rem;
+.jesusImage {
 
-  img{
+  img {
     width: 100%;
     height: 100%;
   }
 }
 
-.heroSmallImage{
+.heroSmallImage {
   border-radius: 50% 50% 0 0;
-  img{
+  height: 12rem;
+  img {
     padding: 1rem 2rem;
     width: 100%;
     height: 100%;
   }
 }
 
-.faithMotion{
-  // bottom: 0rem;
-  background-color: #ffff;
+.donateImage {
+  margin-top: -2rem !important;
 }
 
+// faithful hearts
+.faithfulHeading{
+  border-left: solid 0.3rem #C0304F ;
+  max-width: 24rem;
+}
 
 // footer section start
 
@@ -104,5 +106,29 @@ $arrow-bg-color: #c0304f;
 .footerContent {
   li > a {
     color: $content-color;
+  }
+}
+
+@media (min-width: 992px) {
+
+  // hero section
+
+  .jesusImage{
+    height: 50rem;
+  }
+
+  .faithMotion {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50vw;
+    bottom: 0;
+  }
+
+  .heroTitle{
+    max-width: 15rem !important;
+  }
+  
+  .heroRating{
+    max-width: 10rem !important;
   }
 }

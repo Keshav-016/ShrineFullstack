@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .box {
@@ -9,7 +9,7 @@
 }
 
 .navbarSection {
-  background-color: #F6F2EB;
+  background-color: #f6f2eb;
 }
 
 .itemCount {
@@ -41,16 +41,13 @@
 }
 
 .logo {
-  background-color: #F6F2EB;
+  background-color: #f6f2eb;
 }
 
 .heroSection {
-  background-color: #F6F2EB;
+  background-color: #f6f2eb;
 }
 
-.jesusImage {
-  height: 45rem;
-}
 .jesusImage img {
   width: 100%;
   height: 100%;
@@ -58,6 +55,7 @@
 
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
+  height: 12rem;
 }
 .heroSmallImage img {
   padding: 1rem 2rem;
@@ -65,8 +63,13 @@
   height: 100%;
 }
 
-.faithMotion {
-  background-color: white;
+.donateImage {
+  margin-top: -2rem !important;
+}
+
+.faithfulHeading {
+  border-left: solid 0.3rem #C0304F;
+  max-width: 24rem;
 }
 
 .footer {
@@ -81,4 +84,22 @@
 
 .footerContent li > a {
   color: #747a82;
+}
+
+@media (min-width: 992px) {
+  .jesusImage {
+    height: 50rem;
+  }
+  .faithMotion {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50vw;
+    bottom: 0;
+  }
+  .heroTitle {
+    max-width: 15rem !important;
+  }
+  .heroRating {
+    max-width: 10rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */
