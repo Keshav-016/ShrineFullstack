@@ -5,7 +5,7 @@
 }
 
 .sectionHeading {
-  border-left: solid 0.3rem #C0304F;
+  border-left: solid 0.3rem #c0304f;
   max-width: 24rem;
 }
 
@@ -72,6 +72,36 @@
   margin-top: -2rem !important;
 }
 
+.callPriceSection > div {
+  margin: 1rem 2rem;
+}
+.callPriceSection > div .churchWomanImages img:first-child {
+  height: 30rem;
+}
+.callPriceSection > div .churchWomanImages img:last-child {
+  height: 28rem;
+}
+.callPriceSection > div .callPriceImages img {
+  margin-left: -1.5rem;
+}
+.callPriceSection > div .callPriceJoinusSection {
+  background-color: pink;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.callPriceSection > div .callPriceButton {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.callPriceSection > div .bridgesOfFaith {
+  border-left: 0.1rem solid grey;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
 .unleashPotentialButton {
   width: -moz-fit-content;
   width: fit-content;
@@ -110,5 +140,17 @@
   }
   .heroRating {
     max-width: 10rem !important;
+  }
+  .callPriceSection > div {
+    margin: 1rem 15rem;
+  }
+  .callPriceSection > div .churchWomanImages img:first-child {
+    height: 30rem;
+  }
+  .callPriceSection > div .churchWomanImages img:last-child {
+    height: 28rem;
+  }
+  .callPriceSection > div .callPriceJoinusSection {
+    padding: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

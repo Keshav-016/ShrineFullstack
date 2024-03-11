@@ -8,8 +8,8 @@ $arrow-bg-color: #c0304f;
   box-sizing: border-box !important;
 }
 
-.sectionHeading{
-  border-left: solid 0.3rem #C0304F ;
+.sectionHeading {
+  border-left: solid 0.3rem #c0304f;
   max-width: 24rem;
 }
 
@@ -68,7 +68,6 @@ $arrow-bg-color: #c0304f;
 }
 
 .jesusImage {
-
   img {
     width: 100%;
     height: 100%;
@@ -89,13 +88,46 @@ $arrow-bg-color: #c0304f;
   margin-top: -2rem !important;
 }
 
+.callPriceSection {
+  > div {
+    margin: 1rem 2rem;
+    .churchWomanImages img:first-child {
+      height: 30rem;
+    }
+    .churchWomanImages img:last-child {
+      height: 28rem;
+    }
+    .callPriceImages {
+      img {
+        margin-left: -1.5rem;
+      }
+    }
+    .callPriceJoinusSection {
+      background-color: pink;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+    .callPriceButton {
+      border: none;
+      color: white;
+      background-color: black;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+    }
+    .bridgesOfFaith {
+      border-left: 0.1rem solid grey;
+      padding-left: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
 // unleashPotential section start
 
-
-.unleashPotentialButton{
+.unleashPotentialButton {
   width: fit-content;
 }
-.unleashPotentialChurch{
+.unleashPotentialChurch {
   max-height: 36rem;
 }
 
@@ -119,10 +151,9 @@ $arrow-bg-color: #c0304f;
 }
 
 @media (min-width: 992px) {
-
   // hero section
 
-  .jesusImage{
+  .jesusImage {
     height: 50rem;
   }
 
@@ -133,11 +164,26 @@ $arrow-bg-color: #c0304f;
     bottom: 0;
   }
 
-  .heroTitle{
+  .heroTitle {
     max-width: 15rem !important;
   }
-  
-  .heroRating{
+
+  .heroRating {
     max-width: 10rem !important;
+  }
+
+  .callPriceSection {
+    > div {
+      margin: 1rem 15rem;
+      .churchWomanImages img:first-child {
+        height: 30rem;
+      }
+      .churchWomanImages img:last-child {
+        height: 28rem;
+      }
+      .callPriceJoinusSection {
+        padding: 2rem;
+      }
+    }
   }
 }
