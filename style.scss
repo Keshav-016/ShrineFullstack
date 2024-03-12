@@ -1,25 +1,34 @@
 $heading-color: #232526;
 $content-color: #747a82;
 $arrow-bg-color: #c0304f;
+$hero-section-color: #f6f2eb;
+$colored-section: #ffe6e0;
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box !important;
 }
 
+// generic class
+
 .sectionHeading {
   border-left: solid 0.3rem #c0304f;
-  max-width: 24rem;
+  max-width: 24rem !important;
 }
 
 .box {
   height: 500px;
 }
+
+.pageMargin {
+  > div {
+    margin: 1rem !important;
+  }
+}
+
 // nav section start
 
 .navbarSection {
-  background-color: #f6f2eb;
+  background-color: $hero-section-color;
 }
 
 .itemCount {
@@ -58,43 +67,32 @@ $arrow-bg-color: #c0304f;
 }
 
 .logo {
-  background-color: #f6f2eb;
+  background-color: $hero-section-color;
 }
 
 // hero section
 
 .heroSection {
-  background-color: #f6f2eb;
-}
-
-.jesusImage {
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  background-color: $hero-section-color;
 }
 
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
-  height: 12rem;
-  img {
-    padding: 1rem 2rem;
-    width: 100%;
-    height: 100%;
-  }
+  padding: 1rem 2rem;
 }
 
 .donateImage {
   margin-top: -2rem !important;
 }
 
+// call price section
+
 .callPriceSection {
   > div {
-    margin: 1rem 2rem;
-    .churchWomanImages img:first-child {
+    .churchWomanImages div:first-child {
       height: 30rem;
     }
-    .churchWomanImages img:last-child {
+    .churchWomanImages div:last-child {
       height: 28rem;
     }
     .callPriceImages {
@@ -103,7 +101,7 @@ $arrow-bg-color: #c0304f;
       }
     }
     .callPriceJoinusSection {
-      background-color: pink;
+      background-color: $colored-section;
       padding: 0.5rem;
       border-radius: 0.5rem;
     }
@@ -131,6 +129,37 @@ $arrow-bg-color: #c0304f;
   max-height: 36rem;
 }
 
+// mission section
+
+.mission {
+  .missionCardCollection {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .missionCard {
+    min-width: 16rem;
+    &:hover {
+      cursor: pointer;
+      background-color: $colored-section;
+      border-radius: 4rem 4rem 4rem 0;
+      .readMore {
+        display: inline !important;
+      }
+      .cardImage {
+        > img {
+          filter: invert(9%) sepia(10%) saturate(336%) hue-rotate(155deg)
+            brightness(98%) contrast(88%);
+        }
+      }
+    }
+  }
+  .cardImage {
+    height: 3rem;
+  }
+}
+
 // footer section start
 
 .footer {
@@ -151,15 +180,18 @@ $arrow-bg-color: #c0304f;
 }
 
 @media (min-width: 992px) {
-  // hero section
+  // generic class
 
-  .jesusImage {
-    height: 50rem;
+  .pageMargin {
+    > div {
+      margin: 1rem 10rem !important;
+    }
   }
 
+  // hero section
   .faithMotion {
-    transform: translateX(-50%);
-    position: absolute;
+    // transform: translateX(-50%);
+    // position: absolute;
     left: 50vw;
     bottom: 0;
   }
@@ -172,9 +204,10 @@ $arrow-bg-color: #c0304f;
     max-width: 10rem !important;
   }
 
+  // call Price section
+
   .callPriceSection {
     > div {
-      margin: 1rem 15rem;
       .churchWomanImages img:first-child {
         height: 30rem;
       }

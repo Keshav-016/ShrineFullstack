@@ -1,16 +1,18 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box !important;
 }
 
 .sectionHeading {
   border-left: solid 0.3rem #c0304f;
-  max-width: 24rem;
+  max-width: 24rem !important;
 }
 
 .box {
   height: 500px;
+}
+
+.pageMargin > div {
+  margin: 1rem !important;
 }
 
 .navbarSection {
@@ -53,39 +55,26 @@
   background-color: #f6f2eb;
 }
 
-.jesusImage img {
-  width: 100%;
-  height: 100%;
-}
-
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
-  height: 12rem;
-}
-.heroSmallImage img {
   padding: 1rem 2rem;
-  width: 100%;
-  height: 100%;
 }
 
 .donateImage {
   margin-top: -2rem !important;
 }
 
-.callPriceSection > div {
-  margin: 1rem 2rem;
-}
-.callPriceSection > div .churchWomanImages img:first-child {
+.callPriceSection > div .churchWomanImages div:first-child {
   height: 30rem;
 }
-.callPriceSection > div .churchWomanImages img:last-child {
+.callPriceSection > div .churchWomanImages div:last-child {
   height: 28rem;
 }
 .callPriceSection > div .callPriceImages img {
   margin-left: -1.5rem;
 }
 .callPriceSection > div .callPriceJoinusSection {
-  background-color: pink;
+  background-color: #ffe6e0;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -111,6 +100,27 @@
   max-height: 36rem;
 }
 
+.mission .missionCardCollection::-webkit-scrollbar {
+  display: none;
+}
+.mission .missionCard {
+  min-width: 16rem;
+}
+.mission .missionCard:hover {
+  cursor: pointer;
+  background-color: #ffe6e0;
+  border-radius: 4rem 4rem 4rem 0;
+}
+.mission .missionCard:hover .readMore {
+  display: inline !important;
+}
+.mission .missionCard:hover .cardImage > img {
+  filter: invert(9%) sepia(10%) saturate(336%) hue-rotate(155deg) brightness(98%) contrast(88%);
+}
+.mission .cardImage {
+  height: 3rem;
+}
+
 .footer {
   background-image: url(images/footer/footer.png);
   background-size: cover;
@@ -126,12 +136,10 @@
 }
 
 @media (min-width: 992px) {
-  .jesusImage {
-    height: 50rem;
+  .pageMargin > div {
+    margin: 1rem 10rem !important;
   }
   .faithMotion {
-    transform: translateX(-50%);
-    position: absolute;
     left: 50vw;
     bottom: 0;
   }
@@ -140,9 +148,6 @@
   }
   .heroRating {
     max-width: 10rem !important;
-  }
-  .callPriceSection > div {
-    margin: 1rem 15rem;
   }
   .callPriceSection > div .churchWomanImages img:first-child {
     height: 30rem;
