@@ -3,12 +3,11 @@
   max-width: 24rem !important;
 }
 
-.box {
-  height: 500px;
+.pageMargin {
+  margin-top: 6rem !important;
 }
-
 .pageMargin > div {
-  margin: 1rem !important;
+  margin: 1rem 0.4rem !important;
 }
 
 hr {
@@ -17,8 +16,10 @@ hr {
 }
 
 .buttonWidth {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .navbarSection {
@@ -63,6 +64,16 @@ hr {
 
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
+}
+.heroSmallImage img {
+  transform: translateX(60%);
+}
+
+.heroCrownLady {
+  border-radius: 50% 50% 0 0;
+}
+.heroCrownLady img {
+  transform: translateX(20%);
 }
 
 .donateImage {
@@ -118,11 +129,15 @@ hr {
   height: 3rem;
 }
 
+.articleImage {
+  height: 27rem;
+}
+
 .articleImageContent {
-  max-width: 15rem;
+  max-width: 16rem;
   background-color: white;
-  top: 2rem;
-  left: 3rem;
+  top: 5rem;
+  left: 1.5rem;
 }
 
 .footer {
@@ -139,13 +154,21 @@ hr {
   color: #747a82;
 }
 
+@media (min-width: 576px) {
+  .articleImageContent {
+    top: 4rem;
+    left: 2rem;
+  }
+}
 @media (min-width: 992px) {
   .pageMargin > div {
-    margin: 1rem 10rem !important;
+    margin: 1rem 8rem !important;
   }
   .faithMotion {
+    transform: translateX(-50%);
+    position: absolute;
     left: 50vw;
-    bottom: 0;
+    bottom: -0.3rem;
   }
   .heroTitle {
     max-width: 15rem !important;
@@ -161,5 +184,11 @@ hr {
   }
   .callPriceSection > div .callPriceJoinusSection {
     padding: 2rem;
+  }
+  .handImage {
+    height: 20rem;
+  }
+  .girlImage {
+    height: 35rem;
   }
 }/*# sourceMappingURL=style.css.map */

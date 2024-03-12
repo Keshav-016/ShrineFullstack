@@ -11,13 +11,10 @@ $colored-section: #ffe6e0;
   max-width: 24rem !important;
 }
 
-.box {
-  height: 500px;
-}
-
 .pageMargin {
+  margin-top: 6rem !important;
   > div {
-    margin: 1rem !important;
+    margin: 1rem 0.4rem!important;
   }
 }
 
@@ -27,7 +24,8 @@ hr{
 }
 
 .buttonWidth {
-  width: fit-content;
+  width: fit-content !important;
+  height: fit-content;
 }
 // nav section start
 
@@ -82,7 +80,15 @@ hr{
 
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
-  // padding: 1rem 2rem;
+  img{
+    transform: translateX(60%);
+  }
+}
+.heroCrownLady{
+  border-radius: 50% 50% 0 0;
+  img{
+    transform: translateX(20%);
+  }
 }
 
 .donateImage {
@@ -147,12 +153,6 @@ hr{
       .readMore {
         display: inline !important;
       }
-      // .cardImage {
-      //   > img {
-      //     filter: invert(9%) sepia(10%) saturate(336%) hue-rotate(155deg)
-      //       brightness(98%) contrast(88%);
-      //   }
-      // }
     }
   }
   .cardImage {
@@ -161,13 +161,19 @@ hr{
 }
 
 
+
+
 // article Section
 
+.articleImage{
+  height: 27rem;
+}
+
 .articleImageContent{
-  max-width: 15rem;
+  max-width: 16rem;
   background-color: #ffff;
-  top: 2rem;
-  left: 3rem;
+  top: 5rem;
+  left: 1.5rem;
 }
 
 // footer section start
@@ -189,26 +195,33 @@ hr{
   }
 }
 
+@media (min-width: 576px) {
+
+  // article Section
+
+  .articleImageContent{
+    top: 4rem;
+    left: 2rem;
+  }
+  
+}
+
 @media (min-width: 992px) {
   // generic class
 
   .pageMargin {
     > div {
-      margin: 1rem 10rem !important;
+      margin: 1rem 8rem !important;
     }
   }
 
   // hero section
 
-  // .jesusImage{
-  //   height: 70rem;
-  // }
-
   .faithMotion {
-    // transform: translateX(-50%);
-    // position: absolute;
+    transform: translateX(-50%);
+    position: absolute;
     left: 50vw;
-    bottom: 0;
+    bottom: -0.3rem;
   }
 
   .heroTitle {
@@ -234,4 +247,15 @@ hr{
       }
     }
   }
+
+  // our Work section
+
+  .handImage{
+    height: 20rem;
+  }
+  .girlImage{
+    height: 35rem;
+  }
+
+
 }
