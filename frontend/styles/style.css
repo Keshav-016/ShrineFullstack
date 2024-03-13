@@ -6,9 +6,6 @@
 .pageMargin {
   margin-top: 6rem !important;
 }
-.pageMargin > div {
-  margin: 1rem 0.4rem !important;
-}
 
 hr {
   width: 0.3rem;
@@ -153,7 +150,7 @@ hr {
 }
 
 .footer {
-  background-image: url(images/footer/footer.png);
+  background-image: url(../assets/images/footer/footer.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -179,8 +176,8 @@ hr {
   }
 }
 @media (min-width: 992px) {
-  .pageMargin > div {
-    margin: 1rem 8rem !important;
+  .pageMargin {
+    margin-top: 6rem !important;
   }
   .faithMotion {
     transform: translateX(-50%);
