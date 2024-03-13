@@ -65,9 +65,6 @@ hr {
 .heroSmallImage {
   border-radius: 50% 50% 0 0;
 }
-.heroSmallImage img {
-  transform: translateX(60%);
-}
 
 .heroCrownLady {
   border-radius: 50% 50% 0 0;
@@ -129,6 +126,17 @@ hr {
   height: 3rem;
 }
 
+.eventCardPhoto {
+  max-height: 18rem;
+}
+
+.eventCardContainer > div {
+  max-width: 20rem;
+}
+.eventCardContainer::-webkit-scrollbar {
+  display: none;
+}
+
 .articleImage {
   height: 27rem;
 }
@@ -138,6 +146,10 @@ hr {
   background-color: white;
   top: 5rem;
   left: 1.5rem;
+}
+
+.articleCardContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .footer {
@@ -155,6 +167,12 @@ hr {
 }
 
 @media (min-width: 576px) {
+  .memberButtonSection hr {
+    width: 16rem;
+  }
+  .eventCardContainer > div {
+    max-width: 45rem;
+  }
   .articleImageContent {
     top: 4rem;
     left: 2rem;
@@ -168,7 +186,7 @@ hr {
     transform: translateX(-50%);
     position: absolute;
     left: 50vw;
-    bottom: -0.3rem;
+    bottom: -2.5rem;
   }
   .heroTitle {
     max-width: 15rem !important;
@@ -186,9 +204,12 @@ hr {
     padding: 2rem;
   }
   .handImage {
-    height: 20rem;
+    height: 16rem;
   }
   .girlImage {
-    height: 35rem;
+    height: 36rem;
+  }
+  .memberButtonSection hr {
+    width: 25rem;
   }
 }/*# sourceMappingURL=style.css.map */

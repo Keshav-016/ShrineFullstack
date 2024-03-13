@@ -1,6 +1,5 @@
 export function navbarContent() {
-    return `
-<nav class="navbar navbar-expand-lg border-bottom z-3">
+    return `<nav class="navbar navbar-expand-lg border-bottom z-3">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center d-block d-lg-none" href="#">
             <img src="images/logo/shrine-black.svg" alt="logo" width="150px" class="logo"/>
@@ -54,8 +53,7 @@ export function navbarContent() {
 
 
 export function footerContent() {
-    return `
-<div class="container">
+    return ` <div class="container">
     <div class="row pt-3">
         <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="./images/logo/shrine-white.svg"
                 alt="shrineLogo" class="w-100" /></a>
@@ -104,8 +102,7 @@ export function footerContent() {
                 Lorem ipsum dolor sit amet consectetur <br />
                 adipiscing elit aliquam.
             </p>
-            <input type="text" placeholder="Enter your email"
-                class="p-3 rounded-2 w-100 bg-dark border-0 content" />
+            <input type="text" placeholder="Enter your email" class="p-3 rounded-2 w-100 bg-dark border-0 content" />
             <button class="btn text-white border-0 p-3 mt-0 mt-md-3">Subscribe</button>
         </div>
     </div>
@@ -122,6 +119,5 @@ export function footerContent() {
             <a href="#"><img src="./images/logo/facebook.svg" alt="facebook" /></a>
         </div>
     </div>
-</div>
-    `
+</div> `
 }

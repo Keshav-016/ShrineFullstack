@@ -1,8 +1,28 @@
 const data = [
     {
+        heading: "We Call Price The Lord",
+        subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
+    },
+    {
+        heading: "Faithful hearts, compassionate hands",
+        subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.",
+    },
+    {
+        heading: "Unleash Your Potential of About Us",
+        subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that a reader will be distracted by the readable content of a page when looking.",
+    },
+    {
+        heading: "Your satisfaction is our mission",
+        subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long .",
+    },
+    {
+        heading: "Growing Stronger in God's our work",
+        subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that a reader will be distracted by the readable.",
+    },
+    {
         heading: "Feel god closer to  your members",
         subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-        teamMembers: [
+        memberCardData: [
             {
                 imgUrl: './images/members/vonda.png',
                 title: 'Vonda Sande',
@@ -15,7 +35,7 @@ const data = [
             },
             {
                 imgUrl: './images/members/lorri.png',
-                title: 'Lori Vega',
+                title: 'Lori Vegaso',
                 content: 'Sir Gerry Serrano',
             },
             {
@@ -28,11 +48,11 @@ const data = [
     {
         heading: "See our all events",
         subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-        eventCardObject: [
+        eventCardData: [
             {
                 imgUrl: './images/events/meditation.png',
                 title: 'Mindfullness Meidtation',
-                content: 'A long established fact that a reader will be distracted by the readable content of...',
+                content: 'A long established fact that a reader will be <br> distracted by the readable content of...',
                 date: '24.12.2023-28.12.2023',
                 location: 'Russian Federation St. Peter\'s Church',
                 time: '4:38-8:24',
@@ -41,7 +61,7 @@ const data = [
             {
                 imgUrl: './images/events/seminar.png',
                 title: 'The positive aura seminar',
-                content: 'A long established fact that a reader will be distracted by the readable content of...',
+                content: 'A long established fact that a reader will be <br> distracted by the readable content of...',
                 date: '24.12.2023-28.12.2023',
                 location: 'Russian Federation St. Peter\'s Church',
                 time: '4:38-8:24',
@@ -49,15 +69,30 @@ const data = [
             },
 
         ]
-    }, {
+    },
+    {
         heading: "Our latest Articles",
         subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-        blogCards: [
+        articleCardData: [
             {
                 imgUrl: './images/article/baptism.png',
                 title: 'Baptism Sunday of  church',
                 content: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
                 userImgUrl: './images/article/baptismGirl.png',
+                readTime: '2min read'
+            },
+            {
+                imgUrl: './images/article/baptismRed.png',
+                title: 'Baptism Sunday of  church',
+                content: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
+                userImgUrl: './images/article/baptismRedGirl.png',
+                readTime: '4min read'
+            },
+            {
+                imgUrl: './images/article/baptismBlack.png',
+                title: 'Baptism Sunday of  church',
+                content: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
+                userImgUrl: './images/article/baptismBlackGirl.png',
                 readTime: '2min read'
             },
             {
