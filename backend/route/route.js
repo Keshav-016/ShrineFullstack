@@ -1,5 +1,5 @@
 import {members , event , article} from '../data/homeData.js'
-import { sendEmail } from '../mail.js'
+import { sendEmail } from '../helper/mail.js'
 export function memberSection(route) {
     route.get('/member', (req, res) => {
         res.status(200).json(members)

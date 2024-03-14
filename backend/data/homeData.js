@@ -1,8 +1,9 @@
 export const members =
 {
+    section: "members",
     heading: "Feel god closer to  your members",
     subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-    memberCardData: [
+    cardData: [
         {
             imgUrl: '/home/members/vonda.png',
             title: 'Vonda Sande',
@@ -29,9 +30,10 @@ export const members =
 
 export const event =
 {
+    section: "event",
     heading: "See our all events",
     subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-    eventCardData: [
+    cardData: [
         {
             imgUrl: '/home/events/meditation.png',
             title: 'Mindfullness Meidtation',
@@ -57,9 +59,10 @@ export const event =
 
 export const article =
 {
+    section: "article",
     heading: "Our latest Articles",
     subHeading: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.",
-    articleCardData: [
+    cardData: [
         {
             imgUrl: '/home/article/baptism.png',
             title: 'Baptism Sunday of  church',

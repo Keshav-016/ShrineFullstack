@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-$heading-color: #232526;
-$content-color: #747a82;
-$arrow-bg-color: #c0304f;
-$hero-section-color: #f6f2eb;
-$colored-section: #ffe6e0;
+$headingColor: #232526;
+$contentColor: #747a82;
+$arrowBgColor: #c0304f;
+$heroSectionColor: #f6f2eb;
+$coloredSection : #ffe6e0;
+
 
 @mixin font-design($name, $size, $weight, $family, $color) {
   .#{$name} {
@@ -24,10 +25,10 @@ input{
 
 // generic class
 
-@include font-design(sectionHeading, 2rem, 600, Roboto, $heading-color);
-@include font-design(cardHeading, 1.5rem, 600, Roboto, $heading-color);
-@include font-design(content, 0.9rem, 400, Poppins, $content-color);
-@include font-design(boldContent, 1.1rem, 600, Poppins, $heading-color);
+@include font-design(sectionHeading, 2rem, 600, Roboto, $headingColor);
+@include font-design(cardHeading, 1.5rem, 600, Roboto, $headingColor);
+@include font-design(content, 0.9rem, 400, Poppins, $contentColor);
+@include font-design(boldContent, 1.1rem, 600, Poppins, $headingColor);
 
 .sectionHeading {
   border-left: solid 0.3rem #c0304f;
@@ -52,7 +53,7 @@ hr {
 // nav section start
 
 .navbarSection {
-  background-color: $hero-section-color;
+  background-color: $heroSectionColor;
 }
 
 .itemCount {
@@ -60,7 +61,7 @@ hr {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: $arrow-bg-color;
+  background-color: $arrowBgColor;
   color: white;
   position: absolute;
   top: -50%;
@@ -75,12 +76,12 @@ hr {
   border-bottom: 2px solid;
   border-image: linear-gradient(
     to right,
-    $arrow-bg-color,
-    $arrow-bg-color 70%,
+    $arrowBgColor,
+    $arrowBgColor 70%,
     white 70%,
     white 80%,
-    $arrow-bg-color 80%,
-    $arrow-bg-color
+    $arrowBgColor 80%,
+    $arrowBgColor
   );
   border-image-slice: 1;
 }
@@ -91,13 +92,13 @@ hr {
 }
 
 .logo {
-  background-color: $hero-section-color;
+  background-color: $heroSectionColor;
 }
 
 // hero section
 
 .heroSection {
-  background-color: $hero-section-color;
+  background-color: $heroSectionColor;
 }
 
 .heroSmallImage {
@@ -130,7 +131,7 @@ hr {
       }
     }
     .callPriceJoinusSection {
-      background-color: $colored-section;
+      background-color: $coloredSection ;
       padding: 1.5rem;
       border-radius: 0.5rem;
     }
@@ -167,7 +168,7 @@ hr {
     min-width: 16rem;
     &:hover {
       cursor: pointer;
-      background-color: $colored-section;
+      background-color: $coloredSection ;
       border-radius: 4rem 4rem 4rem 0;
       .readMore {
         display: inline !important;
@@ -222,13 +223,13 @@ hr {
   color: white;
 
   button {
-    background-color: $arrow-bg-color !important;
+    background-color: $arrowBgColor !important;
   }
 }
 
 .footerContent {
   li > a {
-    color: $content-color;
+    color: $contentColor;
   }
 }
 

@@ -88,43 +88,22 @@ button {
   }
 }
 
-.heroStats {
-  background-color: $coloredSection;
-}
-
-// growing faith
-
-.growingFaithCard {
-  background-color: $coloredSection;
-}
-
-// happy prayers
-
-.happyPrayersNumber {
-  left: -3rem;
-  top: -2rem;
-}
-
-.prayerCount {
-  right: -2rem;
-  bottom: 0;
-}
 
 // footer section start
 
 .footer {
-  background-image: url(http://127.0.0.1:3000/assets/footer/footer.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-
-  button {
-    background-color: $arrowBgColor !important;
+    background-image: url(http://127.0.0.1:3000/assets/footer/footer.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  
+    button {
+      background-color: $arrowBgColor !important;
+    }
   }
-}
-
-.footerContent {
-  li > a {
-    color: $contentColor;
+  
+  .footerContent {
+    li > a {
+      color: $contentColor;
+    }
   }
-}

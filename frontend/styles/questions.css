@@ -74,24 +74,6 @@ button {
   cursor: pointer;
 }
 
-.heroStats {
-  background-color: #ffe6e0;
-}
-
-.growingFaithCard {
-  background-color: #ffe6e0;
-}
-
-.happyPrayersNumber {
-  left: -3rem;
-  top: -2rem;
-}
-
-.prayerCount {
-  right: -2rem;
-  bottom: 0;
-}
-
 .footer {
   background-image: url(http://127.0.0.1:3000/assets/footer/footer.png);
   background-size: cover;
@@ -104,4 +86,4 @@ button {
 
 .footerContent li > a {
   color: #747a82;
-}/*# sourceMappingURL=aboutUs.css.map */
+}/*# sourceMappingURL=questions.css.map */

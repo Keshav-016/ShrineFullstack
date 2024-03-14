@@ -12,43 +12,40 @@ const eventRightButton = document.querySelector('.eventRightButton');
 const eventCard = document.getElementsByClassName('eventCard');
 const churchSubscribeEmail = document.querySelector('.churchSubscribeEmail');
 const churchSubscribeButton = document.querySelector('.churchSubscribeButton');
-// const 
 
-let members, events, articles;
 let index = 0;
+let events;
 
 navbarContainer.innerHTML = navbar();
 footerContainer.innerHTML = footer();
 
-
-
-async function fetchData() {
-    const membersFetchedData = await fetch('http://127.0.0.1:3000/home/member');
-    const memberJsonData = await membersFetchedData.json();
-    members = memberJsonData.memberCardData;
-    members.forEach((item) => {
-        createMemberCard(memberCardContainer, item);
-    })
-
-    const eventsFetchedData = await fetch('http://127.0.0.1:3000/home/event');
-    const eventJsonData = await eventsFetchedData.json();
-    events = eventJsonData.eventCardData;
-    events.forEach((item) => {
-        createEventCard(eventCardContainer, item);
-    })
-
-    const articlesFetchedData = await fetch('http://127.0.0.1:3000/home/article');
-    const articleJsonData = await articlesFetchedData.json();
-    articles = articleJsonData.articleCardData;
-    articles.forEach((item) => {
-        createArticleCard(articleCardContainer, item);
+function insertData(data, container , cardCreator) {
+    data.forEach((item) => {
+        cardCreator(container, item);
     })
 }
-fetchData();
 
-// fetchData(members ,'http://127.0.0.1:3000/home/member' );
-// fetchData(events ,'http://127.0.0.1:3000/home/member' );
-// fetchData(articles ,'http://127.0.0.1:3000/home/member' );
+
+async function fetchData(url) {
+    const fetchedData = await fetch(url);
+    const jsonData = await fetchedData.json();
+    const data = jsonData.cardData;
+    if (jsonData.section === 'members') {
+        insertData(data, memberCardContainer , createMemberCard)
+    }
+    else if (jsonData.section === 'event') {
+        insertData(data, eventCardContainer , createEventCard)
+        events = data;
+    }
+    else if (jsonData.section === 'article') {
+        insertData(data, articleCardContainer , createArticleCard);
+    }
+}
+
+
+fetchData('http://127.0.0.1:3000/home/member');
+fetchData('http://127.0.0.1:3000/home/article');
+fetchData('http://127.0.0.1:3000/home/event');
 
 
 async function postEmail(url, data) {
@@ -60,11 +57,13 @@ async function postEmail(url, data) {
         },
         body: JSON.stringify(data),
     });
-    return response.json();    
+    return response.json();
 }
 
 churchSubscribeButton.addEventListener('click', () => {
     postEmail("http://localhost:3000/home/subscribe/church", { "email": churchSubscribeEmail.value });
+    alert('subscribed successfully');
+    churchSubscribeEmail.value = "";
 })
 
 function moveLeft() {

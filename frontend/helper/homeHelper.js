@@ -9,7 +9,7 @@ export function createMemberCard(container, data) {
     </div>
     <div class="d-flex gap-2 justify-content-center">
         <div class="d-none d-lg-block">
-            <img src="http://127.0.0.1:3000/assets/home/members/share.png" alt="share">
+            <img src="${baseUrl}/home/members/share.png" alt="share">
         </div>
         <div>
             <h4 class="card-title cardHeading">${data.title}</h4>
@@ -24,7 +24,7 @@ export function createMemberCard(container, data) {
 
 export function createEventCard(container, data) {
     const card = document.createElement('div');
-    card.setAttribute("class", "d-flex flex-column flex-sm-row gap-4 border flex-shrink-0 eventCard");
+    card.setAttribute("class", "eventCard d-flex flex-column flex-sm-row gap-4 border flex-shrink-0");
     card.innerHTML = `
     <div class="eventCardPhoto">
         <img src=${baseUrl}${data.imgUrl} alt="meditation" class="w-100 h-100" />
@@ -32,15 +32,15 @@ export function createEventCard(container, data) {
     <div class="d-flex flex-column justify-content-around ms-3 ms-sm-0 pt-4 px-3">
         <div class="d-flex flex-column gap-2 mb-2">
             <div>
-                    <img src=http://127.0.0.1:3000/assets/home/events/calendar.png alt="calendar" />
+                    <img src="${baseUrl}/home/events/calendar.png" alt="calendar" />
                 <span class="content">${data.date}</span>
             </div>
             <div>
-                <img src=http://127.0.0.1:3000/assets/home/events/home.png alt="home">
+                <img src="${baseUrl}/home/events/home.png" alt="home">
                 <span class="content">${data.location}</span>
             </div>
             <div>
-                <img src=http://127.0.0.1:3000/assets/home/events/time.png alt="clock" />
+                <img src="${baseUrl}/home/events/time.png" alt="clock" />
                 <span class="content">${data.time}</span>
             </div>
         </div>
