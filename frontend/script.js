@@ -1,6 +1,6 @@
 import navbar from './component/navbar.js';
 import footer from './component/footer.js';
-import { createMemberCard, createEventCard, createArticleCard } from './helper/helper.js';
+import { createMemberCard, createEventCard, createArticleCard } from './helper/homeHelper.js';
 
 const memberCardContainer = document.querySelector('.memberCardContainer');
 const eventCardContainer = document.querySelector('.eventCardContainer');

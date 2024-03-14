@@ -1,7 +1,7 @@
 export default function footer() {
     return ` <div class="container">
     <div class="row pt-3">
-        <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="./assets/images/logo/shrine-white.svg"
+        <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="http://127.0.0.1:3000/assets/footer/shrine-white.svg"
                 alt="shrineLogo" class="w-100" /></a>
         <p class="content col-12 col-md-5 ms-auto mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -58,11 +58,11 @@ export default function footer() {
             Copyright © 2022 Shrine | All Rights Reserved
         </p>
         <div class="d-flex gap-2 mx-auto mx-sm-0">
-            <a href="#"><img src="./assets/images/logo/instagram.svg" alt="instagram" /></a>
-            <a href="#"><img src="./assets/images/logo/twitter.svg" alt="twitter" /></a>
-            <a href="#"><img src="./assets/images/logo/whatsapp.svg" alt="whatsapp" /></a>
-            <a href="#"><img src="./assets/images/logo/youtube.svg" alt="youtube" /></a>
-            <a href="#"><img src="./assets/images/logo/facebook.svg" alt="facebook" /></a>
+            <a href="#"><img src="http://127.0.0.1:3000/assets/footer/instagram.svg" alt="instagram" /></a>
+            <a href="#"><img src="http://127.0.0.1:3000/assets/footer/twitter.svg" alt="twitter" /></a>
+            <a href="#"><img src="http://127.0.0.1:3000/assets/footer/whatsapp.svg" alt="whatsapp" /></a>
+            <a href="#"><img src="http://127.0.0.1:3000/assets/footer/youtube.svg" alt="youtube" /></a>
+            <a href="#"><img src="http://127.0.0.1:3000/assets/footer/facebook.svg" alt="facebook" /></a>
         </div>
     </div>
 </div> `

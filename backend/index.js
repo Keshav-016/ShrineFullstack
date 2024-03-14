@@ -1,15 +1,13 @@
 import express  from 'express';
 import cors from 'cors';
+import homeRoutes from './controller/manageRoutes.js';
 
 const app = express()
 app.use(cors())
 
 
-import homeRoutes from './route/index.js';
-
-
 app.use('/home' , homeRoutes());
-app.use('/images', express.static('assets/images'));
+app.use('/assets', express.static('assets'));
 
 const port = 3000;
 
