@@ -9,7 +9,7 @@ export function createMemberCard(container, data) {
     </div>
     <div class="d-flex gap-2 justify-content-center">
         <div class="d-none d-lg-block">
-            <img src=http://127.0.0.1:3000/assets/home/members/share.png alt="share">
+            <img src="http://127.0.0.1:3000/assets/home/members/share.png" alt="share">
         </div>
         <div>
             <h4 class="card-title cardHeading">${data.title}</h4>

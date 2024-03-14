@@ -3,6 +3,10 @@
   font-family: poppins;
 }
 
+input {
+  outline: none;
+}
+
 .sectionHeading {
   font: 600 2rem Roboto;
   color: #232526;

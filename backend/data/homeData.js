@@ -10,17 +10,17 @@ export const members =
         },
         {
             imgUrl: '/home/members/ronnie.png',
-            title: 'Ronnie Ferrell',
+            title: 'Ronie Ferie',
             content: 'Sir Gerry Serrano',
         },
         {
             imgUrl: '/home/members/lorri.png',
-            title: 'Lori Vegaso',
+            title: 'Lori Vegas',
             content: 'Sir Gerry Serrano',
         },
         {
             imgUrl: '/home/members/annie.png',
-            title: 'Annie Trevino',
+            title: 'Annie Trevin',
             content: 'Sir Gerry Serrano',
         },
     ]

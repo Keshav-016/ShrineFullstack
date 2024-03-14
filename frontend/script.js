@@ -10,6 +10,9 @@ const footerContainer = document.querySelector('.footer')
 const eventLeftButton = document.querySelector('.eventLeftButton');
 const eventRightButton = document.querySelector('.eventRightButton');
 const eventCard = document.getElementsByClassName('eventCard');
+const churchSubscribeEmail = document.querySelector('.churchSubscribeEmail');
+const churchSubscribeButton = document.querySelector('.churchSubscribeButton');
+// const 
 
 let members, events, articles;
 let index = 0;
@@ -40,11 +43,29 @@ async function fetchData() {
     articles.forEach((item) => {
         createArticleCard(articleCardContainer, item);
     })
-
-
 }
 fetchData();
 
+// fetchData(members ,'http://127.0.0.1:3000/home/member' );
+// fetchData(events ,'http://127.0.0.1:3000/home/member' );
+// fetchData(articles ,'http://127.0.0.1:3000/home/member' );
+
+
+async function postEmail(url, data) {
+    const response = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+    return response.json();    
+}
+
+churchSubscribeButton.addEventListener('click', () => {
+    postEmail("http://localhost:3000/home/subscribe/church", { "email": churchSubscribeEmail.value });
+})
 
 function moveLeft() {
     index = (index + 1) % events.length;
@@ -67,4 +88,6 @@ eventLeftButton.addEventListener('click', () => {
 eventRightButton.addEventListener('click', () => {
     moveRight();
 })
+
+
 

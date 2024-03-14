@@ -6,10 +6,6 @@ $arrow-bg-color: #c0304f;
 $hero-section-color: #f6f2eb;
 $colored-section: #ffe6e0;
 
-*{
-  font-family: poppins;
-}
-
 @mixin font-design($name, $size, $weight, $family, $color) {
   .#{$name} {
     font: $weight $size $family;
@@ -17,6 +13,14 @@ $colored-section: #ffe6e0;
   }
 }
 
+
+*{
+  font-family: poppins;
+}
+
+input{
+  outline: none;
+}
 
 // generic class
 
