@@ -1,12 +1,14 @@
 import nodemailer from 'nodemailer';
-const password = 'wpps vfza giaf kfvj';
+import dotenv from 'dotenv'
+dotenv.config();
+
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
         user: 'kkeshavkumar1209@gmail.com',
-        pass: `${password}`,
+        pass: process.env.password,
     },
 });
 

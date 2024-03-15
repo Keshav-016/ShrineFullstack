@@ -1,4 +1,7 @@
 import {members , event , article} from '../data/homeData.js'
+import {aboutData} from '../data/aboutUsData.js'
+import {heroImage , questionsData} from '../data/questionData.js'
+
 import { sendEmail } from '../helper/mail.js'
 export function memberSection(route) {
     route.get('/member', (req, res) => {
@@ -27,3 +30,20 @@ export function subscribeChurch(route){
     });
 }
 
+export function aboutUs(route){
+    route.get('/aboutUsData' , (req,res)=>{
+        res.status(200).json(aboutData);
+    })
+}
+
+export function question(route){
+    route.get('/questionData' , (req,res)=>{
+        res.status(200).json(questionsData);
+    })
+}
+
+export function questionHeroImage(route){
+    route.get('/heroImage' , (req,res)=>{
+        res.status(200).json(heroImage);
+    })
+}

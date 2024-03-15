@@ -12,10 +12,10 @@ export default function navbar() {
         <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
             <ul class="navbar-nav gap-3">
                 <li class="nav-item">
-                     <a class="nav-link navbarContent" href="#"><b>Home</b></a>
+                     <a class="nav-link navbarContent" href="/frontend/index.html"><b>Home</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbarContent" href="#"><b>Pages</b></a>
+                    <a class="nav-link navbarContent" href="/frontend/pages/aboutUs.html"><b>Pages</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbarContent" href="#"><b>Blog</b></a>

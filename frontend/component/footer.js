@@ -37,7 +37,7 @@ export default function footer() {
             <li>
                 <a href="#" class="text-decoration-none">Getting Started</a>
             </li>
-            <li><a href="#" class="text-decoration-none">Help Center</a></li>
+            <li><a href="/frontend/pages/question.html" class="text-decoration-none">Help Center</a></li>
             <li><a href="#" class="text-decoration-none">Server Status</a></li>
             <li><a href="#" class="text-decoration-none">Report a bug</a></li>
             <li><a href="#" class="text-decoration-none">Chst Support</a></li>

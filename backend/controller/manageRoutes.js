@@ -1,11 +1,22 @@
 import {Router} from 'express';
-import { memberSection , eventSection , articleSection , subscribeChurch} from '../route/route.js';
+import { memberSection , eventSection , articleSection , subscribeChurch , aboutUs , question , questionHeroImage} from '../route/route.js';
 const route = Router();
 
-export default function homeRoutes(){
+export function homeRoutes(){
     memberSection(route);
     eventSection(route);
     articleSection(route);
     subscribeChurch(route);
+    return route;
+}
+
+export function aboutUSRoutes(){
+    aboutUs(route);
+    return route;
+}
+
+export function questionRoutes(){
+    questionHeroImage(route);
+    question(route);
     return route;
 }
