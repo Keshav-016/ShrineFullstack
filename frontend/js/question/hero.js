@@ -1,6 +1,7 @@
 import { fetchData } from "../helper/fetch.js";
+import { questionUrl } from "../helper/url.js";
 
-const heroCarouselContainer = document.querySelector('.heroCarouselContainer');
+const heroCarouselWrapper = document.querySelector('.heroCarouselWrapper');
 const heroLeftButton = document.querySelector('.heroLeftButton');
 const heroRightButton = document.querySelector('.heroRightButton ');
 
@@ -17,7 +18,7 @@ function createHeroCard(data) {
     heroImage.setAttribute('class', 'w-100')
     card.append(heroImage);
 
-    heroCarouselContainer.appendChild(card);
+    heroCarouselWrapper.appendChild(card);
 }
 
 function insertData(data) {
@@ -26,18 +27,19 @@ function insertData(data) {
     })
 }
 
-const data = await fetchData('http://127.0.0.1:3000/question/heroImage');
+const data = await fetchData(questionUrl.heroUrl);
 insertData(data);
 
 
-function moveLeft() {
+function moveRight() {
     index = (index + 1) % data.length;
-    heroCarouselContainer.style.transform = `translateX(-${index * 100}%)`
+    heroCarouselWrapper.style.transform = `translateX(-${index * 100}%)`
 }
 
-function moveRight() {
-    index = (data.length - (index + 1));
-    heroCarouselContainer.style.transform = `translateX(-${index * 100}%)`
+function moveLeft() {
+    const move = data.length - 1 - (index) % data.length;
+    index++;
+    heroCarouselWrapper.style.transform = `translateX(-${move * 100}%)`
 
 }
 

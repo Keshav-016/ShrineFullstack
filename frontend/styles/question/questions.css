@@ -41,43 +41,18 @@ button {
   margin-top: 2rem !important;
 }
 
-.itemCount {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #c0304f;
-  color: white;
-  position: absolute;
-  top: -50%;
-  right: -70%;
-}
-
-.navbarContent {
-  border-bottom: 2px solid transparent !important;
-}
-
-.navbarContent:hover {
-  border-bottom: 2px solid;
-  -o-border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
-     border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
-  border-image-slice: 1;
-}
-
-.shrineLogo {
-  top: 20px;
-  left: 40vw;
-}
-
 .sectionChanger span:hover {
   color: #747a82;
   cursor: pointer;
 }
 
-.heroCarouselContainer > div {
+.heroCarouselWrapper {
+  transition: all 1s ease-in-out;
+}
+.heroCarouselWrapper > div {
   width: 100vw;
 }
-.heroCarouselContainer::-webkit-scrollbar {
+.heroCarouselWrapper::-webkit-scrollbar {
   display: none;
 }
 
@@ -112,20 +87,6 @@ button.accordion-button:focus {
 .accordionIndex:focus span {
   background-color: #c0304f;
   color: white;
-}
-
-.footer {
-  background-image: url(http://127.0.0.1:3000/assets/footer/footer.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-.footer button {
-  background-color: #c0304f !important;
-}
-
-.footerContent li > a {
-  color: #747a82;
 }
 
 @media (min-width: 768px) {

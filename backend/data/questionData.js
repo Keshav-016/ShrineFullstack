@@ -45,5 +45,8 @@ export const heroImage =
     },
     {
         image : 'http://127.0.0.1:3000/assets/question/church.png'
-    }
+    },
+    {
+        image : 'http://127.0.0.1:3000/assets/question/hero.png'
+    },
 ]

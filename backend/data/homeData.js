@@ -52,6 +52,7 @@ export const event =
             time: '4:38-8:24',
             button: 'Join Now',
         },
+        
 
     ]
 }

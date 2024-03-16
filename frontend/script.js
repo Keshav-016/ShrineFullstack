@@ -1,12 +1,8 @@
-import navbar from './component/navbar.js';
-import footer from './component/footer.js';
-import { createMemberCard, createEventCard, createArticleCard } from './helper/homeHelper.js';
+import { createMemberCard, createEventCard, createArticleCard } from './js/home/homeHelper.js';
 
 const memberCardContainer = document.querySelector('.memberCardContainer');
 const eventCardContainer = document.querySelector('.eventCardContainer');
 const articleCardContainer = document.querySelector('.articleCardContainer');
-const navbarContainer = document.querySelector('.navbarSection');
-const footerContainer = document.querySelector('.footer')
 const eventLeftButton = document.querySelector('.eventLeftButton');
 const eventRightButton = document.querySelector('.eventRightButton');
 const eventCard = document.getElementsByClassName('eventCard');
@@ -16,8 +12,6 @@ const churchSubscribeButton = document.querySelector('.churchSubscribeButton');
 let index = 0;
 let events;
 
-navbarContainer.innerHTML = navbar();
-footerContainer.innerHTML = footer();
 
 function insertData(data, container , cardCreator) {
     data.forEach((item) => {

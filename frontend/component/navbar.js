@@ -1,5 +1,6 @@
-export default function navbar() {
-    return `<nav class="navbar navbar-expand-lg border-bottom z-3">
+const navbarContainer = document.querySelector('.navbarSection');
+
+navbarContainer.innerHTML =  `<nav class="navbar navbar-expand-lg border-bottom z-3">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center d-block d-lg-none" href="#">
             <img src="http://127.0.0.1:3000/assets/nav/shrine-black.svg" alt="logo" width="150px" class="logo"/>
@@ -49,4 +50,4 @@ export default function navbar() {
         </div>
     </div>
 </nav>`
-};
+;

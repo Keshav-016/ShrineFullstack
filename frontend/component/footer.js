@@ -1,5 +1,6 @@
-export default function footer() {
-    return ` <div class="container">
+const footerContainer = document.querySelector('.footer');
+
+footerContainer.innerHTML =` <div class="container">
     <div class="row pt-3">
         <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="http://127.0.0.1:3000/assets/footer/shrine-white.svg"
                 alt="shrineLogo" class="w-100" /></a>
@@ -66,4 +67,3 @@ export default function footer() {
         </div>
     </div>
 </div> `
-}

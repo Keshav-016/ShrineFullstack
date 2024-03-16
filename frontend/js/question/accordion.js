@@ -1,4 +1,5 @@
 import { fetchData } from "../helper/fetch.js";
+import { questionUrl } from "../helper/url.js";
 
 const leftAccordion = document.querySelector('.leftAccordion');
 const rightAccordion = document.querySelector('.rightAccordion');
@@ -39,7 +40,7 @@ function insertData(data) {
     })
 }
 
-const data = await fetchData('http://127.0.0.1:3000/question/questionData');
+const data = await fetchData(questionUrl.accordionUrl);
 
 insertData(data);
 

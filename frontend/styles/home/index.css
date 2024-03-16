@@ -36,11 +36,6 @@ input {
   margin-top: 6rem !important;
 }
 
-hr {
-  width: 0.3rem;
-  height: 2rem;
-}
-
 .buttonWidth {
   width: -moz-fit-content !important;
   width: fit-content !important;
@@ -50,34 +45,6 @@ hr {
 
 .navbarSection {
   background-color: #f6f2eb;
-}
-
-.itemCount {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #c0304f;
-  color: white;
-  position: absolute;
-  top: -50%;
-  right: -70%;
-}
-
-.navbarContent {
-  border-bottom: 2px solid transparent !important;
-}
-
-.navbarContent:hover {
-  border-bottom: 2px solid;
-  -o-border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
-     border-image: linear-gradient(to right, #c0304f, #c0304f 70%, white 70%, white 80%, #c0304f 80%, #c0304f);
-  border-image-slice: 1;
-}
-
-.shrineLogo {
-  top: 20px;
-  left: 40vw;
 }
 
 .logo {
@@ -152,6 +119,11 @@ hr {
   height: 3rem;
 }
 
+.memberButtonSection hr {
+  width: 0.3rem;
+  height: 2rem;
+}
+
 .eventCardPhoto {
   max-height: 18rem;
 }
@@ -176,20 +148,6 @@ hr {
 
 .articleCardContainer::-webkit-scrollbar {
   display: none;
-}
-
-.footer {
-  background-image: url(http://127.0.0.1:3000/assets/footer/footer.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-.footer button {
-  background-color: #c0304f !important;
-}
-
-.footerContent li > a {
-  color: #747a82;
 }
 
 @media (min-width: 576px) {
