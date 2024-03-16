@@ -28,7 +28,7 @@ footerContainer.innerHTML =` <div class="container">
             <li><a href="#" class="text-decoration-none">About</a></li>
             <li><a href="#" class="text-decoration-none">Contact us</a></li>
             <li><a href="#" class="text-decoration-none">Career Us</a></li>
-            <li><a href="#" class="text-decoration-none">Culture</a></li>
+            <li><a href="/frontend/pages/gallery.html" class="text-decoration-none">Culture</a></li>
             <li><a href="#" class="text-decoration-none">Blog</a></li>
         </ul>
         <ul class="list-unstyled d-flex flex-column gap-2 footerContent">

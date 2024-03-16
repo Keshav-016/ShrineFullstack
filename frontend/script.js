@@ -1,4 +1,5 @@
 import { createMemberCard, createEventCard, createArticleCard } from './js/home/homeHelper.js';
+import { homeUrl } from './js/helper/url.js';
 
 const memberCardContainer = document.querySelector('.memberCardContainer');
 const eventCardContainer = document.querySelector('.eventCardContainer');
@@ -37,9 +38,9 @@ async function fetchData(url) {
 }
 
 
-fetchData('http://127.0.0.1:3000/home/member');
-fetchData('http://127.0.0.1:3000/home/article');
-fetchData('http://127.0.0.1:3000/home/event');
+fetchData(homeUrl.memberUrl);
+fetchData(homeUrl.articleUrl);
+fetchData(homeUrl.eventUrl);
 
 
 async function postEmail(url, data) {

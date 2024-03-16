@@ -4,17 +4,18 @@ import { questionUrl } from "../helper/url.js";
 const heroCarouselWrapper = document.querySelector('.heroCarouselWrapper');
 const heroLeftButton = document.querySelector('.heroLeftButton');
 const heroRightButton = document.querySelector('.heroRightButton ');
-
+const baseUrl = 'http://127.0.0.1:3000';
 
 let index = 0;
+
 
 function createHeroCard(data) {
     const card = document.createElement('div');
     card.setAttribute('class', 'flex-shrink-0 col-12')
 
     let heroImage = document.createElement('img');
-    heroImage.setAttribute('src', data.image)
-    heroImage.setAttribute('alt', 'hero');
+    heroImage.setAttribute('src',baseUrl+data.imageUrl)
+    heroImage.setAttribute('alt', data.alternateText);
     heroImage.setAttribute('class', 'w-100')
     card.append(heroImage);
 

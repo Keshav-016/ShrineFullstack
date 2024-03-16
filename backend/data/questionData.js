@@ -41,12 +41,15 @@ export const questionsData = [
 export const heroImage =
 [
     {
-        image : 'http://127.0.0.1:3000/assets/question/hero.png'
+        imageUrl : '/assets/question/neckless.png',
+        alternateText : 'hero'
     },
     {
-        image : 'http://127.0.0.1:3000/assets/question/church.png'
+        imageUrl : '/assets/question/church.png',
+        alternateText : 'church',
     },
     {
-        image : 'http://127.0.0.1:3000/assets/question/hero.png'
+        imageUrl : '/assets/question/neckless.png',
+        alternateText : 'hero'
     },
 ]

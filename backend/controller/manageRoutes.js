@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { memberSection , eventSection , articleSection , subscribeChurch , aboutUs , question , questionHeroImage} from '../route/route.js';
+import { memberSection , eventSection , articleSection , subscribeChurch , aboutUs , question , questionHeroImage , bottomGallery} from '../route/route.js';
 const route = Router();
 
 export function homeRoutes(){
@@ -18,5 +18,10 @@ export function aboutUSRoutes(){
 export function questionRoutes(){
     questionHeroImage(route);
     question(route);
+    return route;
+}
+
+export function gallery(){
+    bottomGallery(route);
     return route;
 }

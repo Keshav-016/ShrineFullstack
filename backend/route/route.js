@@ -1,6 +1,8 @@
 import {members , event , article} from '../data/homeData.js'
 import {aboutData} from '../data/aboutUsData.js'
 import {heroImage , questionsData} from '../data/questionData.js'
+import { bottomGalleryData } from '../data/galleryData.js'
+
 
 import { sendEmail } from '../helper/mail.js'
 export function memberSection(route) {
@@ -45,5 +47,11 @@ export function question(route){
 export function questionHeroImage(route){
     route.get('/heroImage' , (req,res)=>{
         res.status(200).json(heroImage);
+    })
+}
+
+export function bottomGallery(route){
+    route.get('/galleryImage' , (req,res)=>{
+        res.status(200).json(bottomGalleryData);
     })
 }
