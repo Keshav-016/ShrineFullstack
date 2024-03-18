@@ -2,7 +2,7 @@ const footerContainer = document.querySelector('.footer');
 
 footerContainer.innerHTML =` <div class="container">
     <div class="row pt-3">
-        <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="http://127.0.0.1:3000/assets/footer/shrine-white.svg"
+        <a href="#" class="col-5 col-sm-4 col-md-3 col-lg-2 my-auto"><img src="http://127.0.0.1:3000/assets/footer/shrineWhite.svg"
                 alt="shrineLogo" class="w-100" /></a>
         <p class="content col-12 col-md-5 ms-auto mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

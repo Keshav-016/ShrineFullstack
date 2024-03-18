@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+input {
+  outline: none;
+}
+
+button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sectionHeading {
+  font: 600 2rem Roboto;
+  color: #232526;
+}
+
+.boldTitle {
+  font: 600 1.8rem Roboto;
+  color: #232526;
+}
+
+.cardHeading {
+  font: 600 1.5rem Roboto;
+  color: #232526;
+}
+
+.content {
+  font: 400 0.9rem Poppins;
+  color: #747a82;
+}
+
+.boldContent {
+  font: 600 1.1rem Poppins;
+  color: #232526;
+}
+
+.sectionHeading {
+  border-left: solid 0.3rem #c0304f;
+  max-width: 30rem !important;
+}
+
+.cardHeading {
+  max-width: 15rem;
+}
+
+.pageMargin {
+  margin-top: 6rem !important;
+}
+
+.sectionChanger span:hover {
+  color: #747a82;
+  cursor: pointer;
+}
+
+.ministryCard {
+  background-color: #ffe6e0;
+  border-radius: 2rem 2rem 2rem 0;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c0304f;
+  position: absolute;
+  bottom: 1px;
+  right: -30px;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.learnMore {
+  color: #232526;
+}
+
+.eventContainer button {
+  font-size: 0.8rem;
+}
+
+.selected {
+  background-color: #c0304f;
+  color: #fff;
+}
+
+.pagination span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+.pagination span:hover {
+  cursor: pointer;
+}
+
+.pillarImage {
+  bottom: -6rem;
+}
+
+@media (min-width: 768px) {
+  .pageMargin {
+    margin-top: 6rem !important;
+  }
+}/*# sourceMappingURL=event.css.map */

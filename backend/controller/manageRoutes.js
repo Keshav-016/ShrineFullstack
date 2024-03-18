@@ -1,8 +1,8 @@
-import {Router} from 'express';
-import { memberSection , eventSection , articleSection , subscribeChurch , aboutUs , question , questionHeroImage , bottomGallery} from '../route/route.js';
+import { Router } from 'express';
+import { memberSection, eventSection, articleSection, subscribeChurch, aboutUs, question, questionHeroImage, bottomGallery, videoListingImage , ministries , eventsSection} from '../route/route.js';
 const route = Router();
 
-export function homeRoutes(){
+export function homeRoutes() {
     memberSection(route);
     eventSection(route);
     articleSection(route);
@@ -10,18 +10,29 @@ export function homeRoutes(){
     return route;
 }
 
-export function aboutUSRoutes(){
+export function aboutUSRoutes() {
     aboutUs(route);
     return route;
 }
 
-export function questionRoutes(){
+export function questionRoutes() {
     questionHeroImage(route);
     question(route);
     return route;
 }
 
-export function gallery(){
+export function gallery() {
     bottomGallery(route);
+    return route;
+}
+
+export function videoListing(){
+    videoListingImage(route);
+    return route;
+}
+
+export function event(){
+    ministries(route);
+    eventsSection(route);
     return route;
 }
