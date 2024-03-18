@@ -2,6 +2,7 @@ import {members , event , article} from '../data/homeData.js'
 import {aboutData} from '../data/aboutUsData.js'
 import {heroImage , questionsData} from '../data/questionData.js'
 import { bottomGalleryData } from '../data/galleryData.js'
+import { pastorHeroImage , pastorMembersData} from '../data/pastorTeam.js'
 import { videos } from '../data/videoListingData.js'
 import { ministrydata , eventData } from '../data/eventData.js'
 
@@ -55,6 +56,18 @@ export function questionHeroImage(route){
 export function bottomGallery(route){
     route.get('/galleryImage' , (req,res)=>{
         res.status(200).json(bottomGalleryData);
+    })
+}
+
+export function pastorHeroSlider(route){
+    route.get('/pastorHeroImage' , (req,res)=>{
+        res.status(200).json(pastorHeroImage);
+    })
+}
+
+export function pastorMember(route){
+    route.get('/pastorMember',(req,res)=>{
+        res.status(200).json(pastorMembersData);
     })
 }
 

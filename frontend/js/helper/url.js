@@ -17,6 +17,11 @@ export const galleryUrl = {
     bottomGalleryUrl : 'http://127.0.0.1:3000/gallery/GalleryImage'
 }
 
+export const pastorTeamUrl = {
+    heroUrl : 'http://127.0.0.1:3000/pastor/pastorHeroImage',
+    memberUrl : 'http://127.0.0.1:3000/pastor/pastorMember'
+}
+
 export const videoListingUrl={
     videoUrl : 'http://127.0.0.1:3000/videoListing/video'
 }
