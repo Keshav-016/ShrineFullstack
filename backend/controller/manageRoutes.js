@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { memberSection, eventSection, articleSection, subscribeChurch, aboutUs, question, questionHeroImage, bottomGallery, videoListingImage , ministries , eventsSection , pastorHeroSlider , pastorMember} from '../route/route.js';
+import { memberSection, eventSection, articleSection, subscribeChurch, aboutUs, question, questionHeroImage, bottomGallery, videoListingImage , ministries , eventsSection , pastorHeroSlider , pastorMember , eventDetails} from '../route/route.js';
 const route = Router();
 
 export function homeRoutes() {
@@ -40,5 +40,10 @@ export function videoListing(){
 export function event(){
     ministries(route);
     eventsSection(route);
+    return route;
+}
+
+export function eventDetailsData(){
+    eventDetails(route);
     return route;
 }

@@ -5,6 +5,7 @@ import { bottomGalleryData } from '../data/galleryData.js'
 import { pastorHeroImage , pastorMembersData} from '../data/pastorTeam.js'
 import { videos } from '../data/videoListingData.js'
 import { ministrydata , eventData } from '../data/eventData.js'
+import { eventDetailsData } from '../data/eventDetailsData.js'
 
 
 import { sendEmail } from '../helper/mail.js'
@@ -16,6 +17,7 @@ export function memberSection(route) {
 
 export function eventSection(route) {
     route.get('/event', (req, res) => {
+        
         res.status(200).json(event)
     })
 }
@@ -85,6 +87,12 @@ export function ministries(route){
 
 export function eventsSection (route){
     route.get('/eventSection' , (req,res)=>{
-        res.json(eventData);
+        res.status(200).json(eventData);
     })
+}
+
+export function eventDetails(route){
+    route.get('/eventDetailData' , (req , res)=>{
+        res.status(200).json(eventDetailsData);
+    } )
 }
